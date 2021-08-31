@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  hello-node1:
+    build: ./hello-world-node
+    ports:
+      - 4000:3000
+
+  hello-node2:
+    build: ./hello-world-node
+    ports:
+      - 4001:3000
+
+  nginx:
+    build: ./nginx
